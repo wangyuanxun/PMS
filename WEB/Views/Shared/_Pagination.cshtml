@@ -1,0 +1,24 @@
+﻿@model int
+@if (Model > 1)
+{
+    var url = HttpContext.Current.Request.Url.ToString();
+    url = new System.Text.RegularExpressions.Regex(@"[\?\&]page=\d*").Replace(url, "");
+    if (url.Contains("?"))
+    {
+        url = string.Concat(url, "&");
+    }
+    else
+    {
+        url = string.Concat(url, "?");
+    }
+    <div class="pull-right">
+        <ul class="pagination">
+            <li><a href="@string.Concat(url, "page=1")">&laquo;</a></li>
+            @for (int i = 1; i <= Model; i++)
+            {
+                <li><a href="@string.Concat(url, "page=" + i)">@i</a></li>
+            }
+            <li><a href="@string.Concat(url, "page=" + Model)">&raquo;</a></li>
+        </ul>
+    </div>
+}

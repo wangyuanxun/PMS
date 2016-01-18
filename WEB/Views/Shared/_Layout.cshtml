@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--公用css-->
+    <link rel="stylesheet" type="text/css" href="/content/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/content/css/bootstrap-table.css" />
+    <link rel="stylesheet" type="text/css" href="/content/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/content/css/jquery.mCustomScrollbar.css" />
+    <!--页面css-->
+    @RenderSection("_CssRender", false)
+</head>
+<body>
+    <div class="vp">
+        <div class="vp-left">
+            <div class="vp-left-item">
+                <ul>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-home.png" />
+                    </a></li>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-lock.png" />
+                    </a></li>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-list.png" />
+                    </a></li>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-organization.png" />
+                    </a></li>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-report.png" />
+                    </a></li>
+                    <li><a href="">
+                        <img src="/content/img/icon/icon-info.png" />
+                    </a></li>
+                </ul>
+                <span class="info"><a href="">
+                    <img src="/content/img/icon/icon-setup.png" />
+                </a></span>
+            </div>
+            <div class="vp-left-list">
+                <ul>
+                    <li>
+                        <p class="item-name">
+                            系统设置</p>
+                        <ul>
+                            <li><a href="">权限管理2 </a></li>
+                            <li><a href="" class="active">权限管理 </a></li>
+                            <li><a href="">权限管理1 </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="item-name">
+                            系统设置</p>
+                        <ul>
+                            <li><a href="">权限管理 </a></li>
+                            <li><a href="">权限管理1 </a></li>
+                            <li><a href="">权限管理 </a></li>
+                            <li><a href="">权限管理1 </a></li>
+                            <li><a href="">权限管理 </a></li>
+                            <li><a href="">权限管理1 </a></li>
+                            <li><a href="">权限管理 </a></li>
+                            <li><a href="">权限管理1 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="vp-right">
+            <div class="nav">
+                系统管理 / 我的团队
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+            <div class="loading">
+                <div class="spinner">
+                    <div class="rect1">&nbsp;</div>
+                    <div class="rect2">&nbsp;</div>
+                    <div class="rect3">&nbsp;</div>
+                    <div class="rect4">&nbsp;</div>
+                    <div class="rect5">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面js-->
+    @RenderSection("_JsRender", false)
+</body>
+</html>

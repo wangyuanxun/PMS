@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--公用css-->
+    <link rel="stylesheet" type="text/css" href="/content/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/content/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/content/css/jquery.mCustomScrollbar.css" />
+    <!--页面css-->
+    @RenderSection("_CssRender", false)
+</head>
+<body>
+    @RenderBody()
+    <!--页面js-->
+    @RenderSection("_JsRender", false)
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿@using EntityLib;
+@model Page<Sys_Menu>
+@{
+    ViewBag.Title = "菜单列表";
+}
+<div class="btn-group mb-10" ms-controller="data">
+    <button type="button" class="btn btn-default" ms-click="add">
+        <span class="glyphicon glyphicon-plus"></span>新增
+    </button>
+    <button type="button" class="btn btn-default" ms-click="edit">
+        <span class="glyphicon glyphicon-pencil"></span>编辑
+    </button>
+    <button type="button" class="btn btn-default" ms-click="del">
+        <span class="glyphicon glyphicon-remove"></span>删除
+    </button>
+</div>
+<table id="datagrid1" data-toggle="table" data-checkbox="true" data-click-to-select="true">
+    <thead>
+        <tr>
+            <th data-checkbox="true">
+            </th>
+            <th data-field="ID" data-visible="false">
+                ID
+            </th>
+            <th data-field="MenuName">
+                菜单名称
+            </th>
+            <th data-field="LinkUrl">
+                链接地址
+            </th>
+            <th data-field="OrderIndex">
+                排序
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>
+                </td>
+                <td>
+                    @item.ID
+                </td>
+                <td>
+                    @item.MenuName
+                </td>
+                <td>
+                    @item.LinkUrl
+                </td>
+                <td>
+                    @item.OrderIndex
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.Partial("_Pagination", Model.TotalPages)
+@section _JsRender{
+    <script type="text/javascript" src="/content/js/require/require.js" data-main="/content/js/pageJs/Menu/List"></script>
+}

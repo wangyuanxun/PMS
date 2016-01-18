@@ -1,0 +1,14 @@
+E:\MINE\PMS\Util\bin\Debug\CommonLib.xml
+E:\MINE\PMS\Util\bin\Debug\CommonLib.dll
+E:\MINE\PMS\Util\bin\Debug\CommonLib.pdb
+E:\MINE\PMS\Util\bin\Debug\Newtonsoft.Json.dll
+E:\MINE\PMS\Util\bin\Debug\ThoughtWorks.QRCode.dll
+E:\MINE\PMS\Util\bin\Debug\Newtonsoft.Json.xml
+E:\MINE\PMS\Util\obj\Debug\CommonLib.dll
+E:\MINE\PMS\Util\obj\Debug\CommonLib.pdb
+E:\MINE\PMS\CommonLib\bin\Debug\CommonLib.dll
+E:\MINE\PMS\CommonLib\bin\Debug\CommonLib.pdb
+E:\MINE\PMS\CommonLib\bin\Debug\Newtonsoft.Json.dll
+E:\MINE\PMS\CommonLib\bin\Debug\Newtonsoft.Json.xml
+E:\MINE\PMS\CommonLib\obj\Debug\CommonLib.dll
+E:\MINE\PMS\CommonLib\obj\Debug\CommonLib.pdb
